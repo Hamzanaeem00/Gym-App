@@ -18,8 +18,10 @@ const HeroBanner = () => {
         </Typography>
         <Button  sx={{backgroundColor:'#ff2625', padding:"10px", marginTop:"40px"}}  variant="contained" color='error' mb={4} href="#exercises">Explore Excercises</Button>
         <Typography fontWeight={600} fontSize='200px'
-        color="#ff2625" sx={{opacity: "0.1", display: {lg:'block', sm:'none'}}} >Exercise</Typography>
+        color="#ff2625" sx={{opacity: "0.1", display: {lg:'block', sm:'block', xs:'none'}}} >Exercise</Typography>
+        <Box>
         <img src={HeroBannerImage} alt="banner" className='hero-banner-img'/>
+        </Box>
     </Box>
   )
 }
