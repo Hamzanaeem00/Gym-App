@@ -14,7 +14,7 @@ const [bodyPart, setBodyPart]= useState ('all')
    <Box>
       <HeroBanner />
       <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setbodyPart={setBodyPart} />
-      <Exercises setExercises={setExercises} bodyPart={bodyPart} setbodyPart={setBodyPart} />
+      <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} />
    </Box> 
   )
 }
