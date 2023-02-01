@@ -9,11 +9,12 @@ const Home = () => {
 // console.log(exercises);
 
 const [bodyPart, setBodyPart]= useState ('all')
+console.log("bodypart==>", bodyPart);
 
   return (
    <Box>
       <HeroBanner />
-      <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setbodyPart={setBodyPart} />
+      <SearchExercises setExercises={setExercises} bodyPart={bodyPart} setBodyPart={setBodyPart} />
       <Exercises setExercises={setExercises} bodyPart={bodyPart} exercises={exercises} />
    </Box> 
   )

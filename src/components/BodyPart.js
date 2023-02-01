@@ -4,7 +4,7 @@ import Icon from "../assets/assets/icons/gym.png";
 import { Typography } from "@mui/material";
 const BodyPart = ({item, setBodyPart, bodyPart}) => {
 //   console.log("item", item);
-console.log(setBodyPart);
+// console.log(setBodyPart);
 
   return (
       <Stack
