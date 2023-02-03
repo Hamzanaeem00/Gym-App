@@ -5,6 +5,7 @@ import BodyPart from './BodyPart';
 import RightArrowIcon from '../assets/assets/icons/right-arrow.png'
 import LeftArrowIcon from '../assets/assets/icons/left-arrow.png'
 import { Typography } from '@mui/material';
+import ExercisesCard from './ExercisesCard';
 
 
 const LeftArrow = ()=>{
@@ -23,7 +24,7 @@ const RightArrow = ()=>{
         </Typography>
     )
 }
-const HorizontalScrollBar = ({data, bodyParts, bodyPart, setBodyPart}) => {
+const HorizontalScrollBar = ({data, bodyParts, bodyPart, setBodyPart,  isBodyParts}) => {
     console.log("bodyParts==>",data);   
     
 
@@ -38,7 +39,7 @@ const HorizontalScrollBar = ({data, bodyParts, bodyPart, setBodyPart}) => {
          title={item.id || item}
          m ='0 40px'
          >
-            <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart}  />
+           {isBodyParts?  <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart}  /> : <ExercisesCard exercise={item   } />}
              
          </Box>
       )
