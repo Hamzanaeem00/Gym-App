@@ -5,7 +5,7 @@ import HorizontalScrollBar from './HorizontalScrollBar'
 
 const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
   console.log("bodyPart==>",bodyPart)
-    console.log("setBodyPart==>",setBodyPart);  
+    // console.log("setBodyPart==>",setBodyPart);  
 const [search, setSearch]= useState('')
 const [bodyParts, setBodyParts]= useState([])
 // console.log("check",bodyParts);
